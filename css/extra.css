@@ -1,0 +1,211 @@
+
+
+body {
+     font-family: 'Oxygen', sans-serif;
+     color: #fff;
+     font-size: 16px;
+     background-color: #82ccdd;    
+}
+
+/*** HEADER ***/
+#header-nav {
+     background-color: #ffaf40;
+     border-radius: 0;
+     border: 0;
+}
+.navbar-brand {
+     padding-top: 25px;
+}
+
+.navbar-brand h1 { /*** Restaurant Name ***/
+     font-family: 'Lora', serif;
+     color: #4b4b4b;
+     font-size: 1.5em;
+     text-transform: uppercase;
+     font-weight: bold;
+     text-shadow: 1px 1px 1px #222;
+     margin-top: 0;
+     margin-bottom: 0;
+     line-height: .80;
+}
+
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+     text-decoration: none;
+}
+
+#nav-list {
+     margin-top: 15px;
+}
+#nav-list a {
+     color: #4b4b4b;
+     text-align: center;
+     font-weight: 600;
+}
+#nav-list a:hover, #nav-list a:focus {
+     background: #E7E7E5;
+}
+#nav-list a span {
+     font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+     border: 1px solid #61122F;
+     
+}
+
+.navbar-header button.navbar-toggle {
+     clear: both;
+     margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME Page */
+#menu {
+     font-weight: bold;
+     font-size: 35px;
+     color: black;
+     margin-top: 60px;
+}
+#chicken {
+     font-weight: bold;
+     font-size:  25px;
+     color:  #eb2f06;
+}
+
+.container-fluid .jumbotron {
+     box-shadow: 0 0 50px #3F0C1F;
+     border: 2px solid #3F0C1F;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+     height: 250px;
+     width: 100%;
+     margin-bottom: 15px;
+     position: relative;
+     border: 2px solid #3F0C1F;
+     overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+     box-shadow: 0 1px 5px 1px #CCCCCC; 
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+     position: absolute;
+     bottom: 0;
+     right:0;
+     width: 100%;
+     text-align: center;
+     font-size: 1.6em;
+     text-transform: uppercase;
+     background-color: #000;
+     color: #FFF;
+     opacity: .8;
+}
+/* END HOME PAGE */
+.text-center {
+     margin-top: 5px;
+}
+.container-fluid .jumbotron {
+          background-color: #0a3d62;
+          background-size: cover; /* img conteynerin tamamini ortdu */
+          height: 1000px;
+          box-shadow: 0 0 50px #3F0C1F;
+          border: 2px solid #3F0C1F;
+
+}
+/*** Large devices only ***/
+@media (min-width: 1200px) {
+          
+}
+
+/*** Medium devices only ***/
+@media (min-width: 992px) and (max-width: 1199px) {
+     /* Header */
+     
+     /* Home Page */
+     
+     /* End Home Page */
+}
+
+/*** Small devices only ***/
+@media (min-width: 768px) and (max-width: 991px) {
+     /* Home Page */
+     .container .jumbotron {
+          background-color: #0a3d62;  
+          height: 1000px;
+          box-shadow: 0 0 50px #3F0C1F;
+          border: 2px solid #3F0C1F;
+     }
+}
+
+/*** Extra small devices only ***/
+@media (max-width: 767px) {
+     /* Header */
+     .navbar-brand {
+          padding-top: 10px;
+          height: 80px;
+     }
+
+     .navbar-brand h1 { /* Restaurant name */
+          padding-top: 25px;
+          font-size: 5vw; /* 1vw = 1% of viewport width */
+     }
+
+     #bs-example-navbar-collapse-1 a  span { /* Collapsed nav menu glyph */
+          font-size: 1em;
+          margin-right: 5px;
+     }
+     /* End Header*/
+
+     /* Home Page */
+     .container-fluid .jumbotron {
+          margin-top: 30px;
+          padding: 0;
+          box-shadow: 0 0 50px #3F0C1F;
+          border: 2px solid #3F0C1F;
+     }
+      #menu {
+          font-weight: bold;
+          font-size: 35px;
+          color: black;
+          margin-top: 60px;
+     }
+      .container-fluid .jumbotron {
+          background-color: #0a3d62;
+          background-size: cover;/* img conteynerin tamamini ortdu */
+          height: 2000px;
+          box-shadow: 0 0 50px #3F0C1F;
+          border: 2px solid #3F0C1F;
+     
+     }
+}
+
+/***** Super extra small devices Only :-) (e.g, Iphone 4) ******/
+@media (max-width: 479px) {
+     /* Header */
+     .navbar-brand h1 { /* Restaurant name */
+          padding-top: 20px;
+          font-size: 6vw;
+     }
+     /* End Header */
+     /* Home Page */
+     #menu-tile, #specials-tile {
+          width: 280px;
+          margin: 0 auto 15px;
+     }
+     #menu {
+          font-weight: bold;
+          font-size: 35px;
+          color: black;
+          margin-top: 60px;
+     }
+     .container-fluid .jumbotron {
+          background-color: #0a3d62;
+          background-size: cover; /* img conteynerin tamamini ortdu */
+          height: 3000px;
+          box-shadow: 0 0 50px #3F0C1F;
+          border: 2px solid #3F0C1F;
+     
+     }
+}
